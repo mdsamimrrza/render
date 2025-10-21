@@ -1,0 +1,84 @@
+{% extends 'education/base.html' %}
+{% load static %}
+
+{% block content %}
+<header class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">EduTech</span></h1>
+            <p class="lead">Empowering educators and students with innovative learning solutions</p>
+            <div class="cta-buttons">
+                <a href="{% url 'register' %}" class="btn btn-primary">Get Started</a>
+                <a href="#features" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'images/hero-illustration.svg' %}" alt="Online Learning">
+        </div>
+    </div>
+</header>
+
+<section id="features" class="features">
+    <div class="container">
+        <h2 class="section-title">Why Choose EduTech?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of teaching experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Interactive Learning</h3>
+                <p>Engage with interactive content and hands-on projects.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Certification</h3>
+                <p>Earn certificates upon course completion to showcase your skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to start learning?</h2>
+        <p>Join thousands of students already learning with us.</p>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Create Free Account</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>EduTech</h3>
+                <p>Making quality education accessible to everyone, everywhere.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@edutech.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduTech. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}
